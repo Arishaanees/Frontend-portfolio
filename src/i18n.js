@@ -5,8 +5,8 @@ const resources = {
   en: {
     translation: {
       // ==== Home ====
-      homeTitle: "Hi, I'm a Frontend Developer",
-      homeDesc: "Welcome to my portfolio! Explore my work and experience.",
+      homeTitle: "Hi, I'm a React Frontend Developer",
+      homeDesc: "passionate about building fast, responsive, and modern web applications using React and Vite.",
       contactBtn: "Contact Me",
 
       // ==== About ====
