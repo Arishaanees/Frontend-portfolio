@@ -34,7 +34,7 @@ const Footer = () => {
         <ul className="text-sm md:text-xl space-y-4">
           <li className="flex items-center gap-3 justify-center md:justify-start">
             <a href="mailto:arishaanees6@gmail.com" className="hover:underline flex items-center gap-2">
-              <SiGmail /> <span className="break-words">arishaanees6@gmail.com</span>
+              <SiGmail /> <span className="break-words">userarishaanees99@gmail.com</span>
             </a>
           </li>
           <li className="flex items-center gap-3 justify-center md:justify-start">
