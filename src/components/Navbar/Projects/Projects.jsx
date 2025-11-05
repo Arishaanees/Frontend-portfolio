@@ -23,7 +23,7 @@ export const Projects = () => {
       title: "WeatherForecaster",
       main: "Real-time weather app built with React and Tailwind CSS.",
       demoLink: "https://weather-forecaste-nine.vercel.app/",
-      codeLink: "https://github.com/Arishaanees/Weather-forecaste"
+      // codeLink: "https://github.com/Arishaanees/Weather-forecaste"
     }
   ];
 
