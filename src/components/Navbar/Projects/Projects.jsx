@@ -10,7 +10,7 @@ export const Projects = () => {
     {
       title: "E-Shop Control Panel",
       main: "E-commerce admin panel built with React and TypeScript.",
-      demoLink: "https://react-tailwind-admin-dashboard-main.vercel.app/",
+      demoLink: "https://my-react19-5a1r4pey9-arishas-projects-f4ed1b3d.vercel.app/",
       codeLink: "https://github.com/Arishaanees/vite-typescript"
     },
     {
