@@ -16,14 +16,14 @@ export const Projects = () => {
     {
       title: "Hike App",
       main: "Modern React & Tailwind CSS app inspired by Nike’s website.",
-      demoLink: "https://my-react19-app-kohl.vercel.app/",
+      demoLink: "https://my-react18-re3h3t9ff-arishas-projects-f4ed1b3d.vercel.app/",
       codeLink: "https://github.com/Arishaanees/Hike-shoe"
     },
     {
       title: "WeatherForecaster",
       main: "Real-time weather app built with React and Tailwind CSS.",
       demoLink: "https://weather-forecaste-nine.vercel.app/",
-      // codeLink: "https://github.com/Arishaanees/Weather-forecaste"
+      codeLink: "https://github.com/Arishaanees/Weather-forecaste"
     }
   ];
 
