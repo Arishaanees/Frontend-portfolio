@@ -2,6 +2,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import ProjectsCard from "./ProjectsCard";
+import UseCases from "./UseCases";
 
 export const Projects = () => {
   const { t } = useTranslation();
@@ -34,7 +35,10 @@ export const Projects = () => {
       <div className="py-12 px-8 flex flex-wrap gap-6 justify-center">
         {projects.map((p) => (
           <ProjectsCard key={p.title} {...p} />
+          
         ))}
+        <UseCases />
+
       </div>
     </section>
   );

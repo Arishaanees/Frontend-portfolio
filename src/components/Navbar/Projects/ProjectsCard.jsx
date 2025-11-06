@@ -11,21 +11,21 @@ const ProjectsCard = ({ title, main, demoLink, codeLink }) => {
       <h3 className="px-2 text-xl md:text-2xl font-bold leading-normal">{title}</h3>
       <p className="px-2 text-sm md:text-md leading-tight py-3 flex-1">{main}</p>
       <div className="mt-2 flex gap-4 justify-center">
-        <a
+         <a
+          href={codeLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white py-2 px-4 rounded-3xl bg-gray-800 hover:scale-105 transition-transform duration-200"
+        >
+          Source
+        </a>
+         <a
           href={demoLink}
           target="_blank"
           rel="noopener noreferrer"
           className="text-white py-2 px-4 rounded-3xl bg-[#465697] hover:scale-105 transition-transform duration-200"
         >
           Demo
-        </a>
-        <a
-          href={codeLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white py-2 px-4 rounded-3xl bg-[#465697] hover:scale-105 transition-transform duration-200"
-        >
-          Source
         </a>
       </div>
     </article>
