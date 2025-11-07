@@ -1,64 +1,123 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
-import { SiTypescript, SiTailwindcss, SiBootstrap, SiRedux } from "react-icons/si";
+import { FaBook } from "react-icons/fa";
 
 const Portfolio = () => {
-  const { t } = useTranslation();
-
   return (
-    <section className="min-h-screen p-10 md:p-16 bg-gray-100 dark:bg-[#1a1a2e] text-black dark:text-white transition-colors duration-500">
-      <div className="max-w-6xl mx-auto space-y-8 md:space-y-10">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-          <div>
-            <h3 className="text-3xl font-bold mb-6 border-b-2 border-[#465697] inline-block">
-              {t("skillsTitle")}
-            </h3>
+    <section className="min-h-screen bg-gray-100 dark:bg-[#0f172a] text-gray-900 dark:text-gray-100 py-16 px-6 md:px-16 font-sans transition-colors duration-500">
+      <div className="max-w-5xl mx-auto">
 
-            <div className="flex flex-wrap gap-4 mb-6 text-4xl">
-              <FaHtml5 />
-              <FaCss3Alt />
-              <FaJs />
-              <SiTypescript />
-              <FaReact />
-              <SiTailwindcss />
-              <SiBootstrap />
-              <SiRedux />
+        {/* Education Section */}
+        <div className="relative mb-16">
+          {/* Icon */}
+          <div className="flex items-center mb-10">
+            <div className="bg-white dark:bg-gray-800 p-3 rounded-lg shadow-md mr-3 border border-gray-300 dark:border-gray-700">
+              <FaBook className="text-[#465697] text-xl" />
             </div>
-
-            <div className="space-y-2 text-lg">
-              <p><span className="font-semibold">{t("frameworks")}:</span> React, Vite, TypeScript</p>
-              <p><span className="font-semibold">{t("stateManagement")}:</span> Redux Toolkit</p>
-              <p><span className="font-semibold">{t("layout")}:</span> HTML5, CSS3, SCSS, Bootstrap, Tailwind CSS</p>
-              <p><span className="font-semibold">{t("testing")}:</span> Vitest</p>
-              <p><span className="font-semibold">{t("misc")}:</span> Git, Node.js, NPM, VS Code</p>
-            </div>
+            <h2 className="text-3xl font-bold">Education</h2>
           </div>
 
-          <div>
-            <h3 className="text-3xl font-bold mb-4 border-b-2 border-[#465697] inline-block">
-              {t("educationTitle")}
-            </h3>
-            <p className="text-lg leading-relaxed">🎓 Virtual University of Pakistan — <span className="font-medium">BS Software Engineering (2024)</span></p>
+          {/* Vertical Line */}
+          <div className="absolute left-5 top-20 bottom-0 border-l-2 border-gray-300 dark:border-gray-700"></div>
 
-            <h3 className="text-3xl font-bold mb-4 mt-6 border-b-2 border-[#465697] inline-block">
-              {t("experienceTitle")}
-            </h3>
-            <p className="text-lg leading-relaxed">💻 Frontend Developer — <span className="font-medium">Codekernal (2024)</span></p>
+          {/* Timeline Items */}
+          <div className="space-y-10 ml-10">
+            {/* University */}
+            <div className="relative">
+              <span className="absolute -left-[22px] top-2 w-4 h-4 bg-[#465697] rounded-full border-4 border-gray-100 dark:border-[#0f172a]" />
+              <h3 className="font-bold text-lg">
+                Virtual University of Pakistan
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
+                2019 — 2023
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                Completed Bachelor of Science in Software Engineering (BSSE) with a strong focus on software design, web technologies, and frontend development.
+              </p>
+            </div>
+
+            {/* Internship */}
+            <div className="relative">
+              <span className="absolute -left-[22px] top-2 w-4 h-4 bg-[#465697] rounded-full border-4 border-gray-100 dark:border-[#0f172a]" />
+              <h3 className="font-bold text-lg">CodeKernel</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
+                2024 — 2025 | Frontend Developer (Internship)
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                Worked on responsive, user-friendly web interfaces using React, TailwindCSS, and TypeScript. Collaborated with developers and designers to improve UI/UX and performance optimization.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 pt-6 border-t border-gray-300 dark:border-gray-600">
-          <div>
-            <h3 className="text-3xl font-bold mb-3 border-b-2 border-[#465697] inline-block">{t("languagesTitle")}</h3>
-            <p className="text-lg">German (B2), Urdu, English</p>
-          </div>
+        {/* Skills Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">My Skills</h2>
 
-          <div>
-            <h3 className="text-3xl font-bold mb-3 border-b-2 border-[#465697] inline-block">{t("interestsTitle")}</h3>
-            <p className="text-lg">Coding, Gaming, Traveling</p>
+          <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-2xl p-8 shadow-md space-y-5">
+            <p>
+              <span className="font-semibold text-gray-800 dark:text-gray-200">
+                Programming Languages:
+              </span>{" "}
+              JavaScript | TypeScript | C++ | HTML5 | CSS3
+            </p>
+            <p>
+              <span className="font-semibold text-gray-800 dark:text-gray-200">
+                Frontend Development:
+              </span>{" "}
+              React | Vite | TailwindCSS | Bootstrap | Responsive Design | UI/UX Implementation
+            </p>
+            <p>
+              <span className="font-semibold text-gray-800 dark:text-gray-200">
+                Tools & Version Control:
+              </span>{" "}
+              Git | GitHub | VS Code | Postman
+            </p>
+            <p>
+              <span className="font-semibold text-gray-800 dark:text-gray-200">
+                Key Expertise:
+              </span>{" "}
+              Frontend Development | Clean Code | Component-Based Architecture | API Integration (Axios) | Debugging
+            </p>
           </div>
         </div>
+
+        {/* Languages Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Languages</h2>
+
+          <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-2xl p-8 shadow-md">
+            <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+              <li>• English — Fluent</li>
+              <li>• German — Basic</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Interests Section */}
+        <div>
+          <h2 className="text-3xl font-bold mb-6">Interests</h2>
+
+          <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-2xl p-8 shadow-md">
+            <ul className="flex flex-wrap gap-4 text-gray-700 dark:text-gray-300">
+              <li className="bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-xl border border-gray-300 dark:border-gray-600">
+                Frontend Development
+              </li>
+              <li className="bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-xl border border-gray-300 dark:border-gray-600">
+                Web Design
+              </li>
+              <li className="bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-xl border border-gray-300 dark:border-gray-600">
+                UI/UX Design
+              </li>
+              <li className="bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-xl border border-gray-300 dark:border-gray-600">
+                JavaScript Frameworks
+              </li>
+              <li className="bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-xl border border-gray-300 dark:border-gray-600">
+                Learning New Technologies
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
   );
