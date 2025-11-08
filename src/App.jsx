@@ -93,3 +93,50 @@ const App = () => (
 );
 
 export default App;
+// import React, { useState } from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Navbar from "./components/Navbar";
+
+// // Example page components
+// const Home = () => <div className="p-8 text-center text-lg">Welcome to the Home Page</div>;
+// const About = () => <div className="p-8 text-center text-lg">About Me Section</div>;
+// const Skills = () => <div className="p-8 text-center text-lg">My Skills Section</div>;
+// const Projects = () => <div className="p-8 text-center text-lg">Projects Showcase</div>;
+// const Contact = () => <div className="p-8 text-center text-lg">Contact Me Section</div>;
+
+// function App() {
+//   // 🌙 Dark Mode Toggle
+//   const [darkMode, setDarkMode] = useState(false);
+//   const toggleDarkMode = () => setDarkMode((prev) => !prev);
+
+//   // 🌐 Language Toggle
+//   const [language, setLanguage] = useState("en");
+//   const toggleLanguage = (lang) => setLanguage(lang);
+
+//   return (
+//     <Router>
+//       <div className={darkMode ? "dark bg-[#0c0e19] text-white min-h-screen" : "bg-[#f1f8fa] text-black min-h-screen"}>
+//         {/* ✅ Navbar */}
+//         <Navbar
+//           darkMode={darkMode}
+//           toggleDarkMode={toggleDarkMode}
+//           language={language}
+//           toggleLanguage={toggleLanguage}
+//         />
+
+//         {/* ✅ Page Routes */}
+//         <main className="pt-20 md:pt-24 pb-10">
+//           <Routes>
+//             <Route path="/" element={<Home />} />
+//             <Route path="/about" element={<About />} />
+//             <Route path="/skills" element={<Skills />} />
+//             <Route path="/projects" element={<Projects />} />
+//             <Route path="/contact" element={<Contact />} />
+//           </Routes>
+//         </main>
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;

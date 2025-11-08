@@ -35,7 +35,7 @@ If I find a project online built with these technologies, I can recreate it usin
       projectTitle: "Projects",
 
       // ==== Contact / Footer ====
-      contactTitle: "Contact",
+      contactTitle: "Contact Form",
       contactSubtitle: "Feel free to reach out anytime!",
 
       // ==== Navbar ====
