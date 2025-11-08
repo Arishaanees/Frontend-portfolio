@@ -18,7 +18,8 @@ I’m also confident in creating projects using React + Vite + Tailwind CSS and 
 If I find a project online built with these technologies, I can recreate it using React and Vite and efficiently customize it according to my needs or desired design.`,
 
       // ==== Portfolio (Skills) ====
-      skillsTitle: "Skills",
+      skillsTitle: "My Skills",
+      skillsList: "HTML, CSS, JavaScript, React, Tailwind CSS, and more.",
       educationTitle: "Education",
       experienceTitle: "Experience",
       languagesTitle: "Languages",
@@ -60,7 +61,8 @@ If I find a project online built with these technologies, I can recreate it usin
         "Ich bin ein leidenschaftlicher Frontend-Entwickler, der moderne, reaktionsfähige und ansprechende Benutzeroberflächen erstellt.",
 
       // ==== Portfolio (Skills) ====
-      skillsTitle: "Fähigkeiten",
+      skillsTitle: "Meine Fähigkeiten",
+      skillsList: "HTML, CSS, JavaScript, React, Tailwind CSS und mehr.",
       educationTitle: "Ausbildung",
       experienceTitle: "Erfahrung",
       languagesTitle: "Sprachen",
@@ -92,6 +94,7 @@ If I find a project online built with these technologies, I can recreate it usin
 i18n.use(initReactI18next).init({
   resources,
   lng: "en",
+  fallbackLng: "en",
   interpolation: { escapeValue: false },
 });
 

@@ -98,7 +98,6 @@ const Footer = () => {
               Send Message
             </button>
           </div>
-
           {status === "success" && (
             <p className="mt-4 text-green-600 dark:text-green-400">
               Thank you! I will get back to you soon.
