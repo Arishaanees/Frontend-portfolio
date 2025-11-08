@@ -39,26 +39,6 @@ const Footer = () => {
   return (
     <section className="min-h-screen bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex flex-col items-center justify-center transition-colors duration-500 relative">
       {/* 🌓 Theme + Language Switch */}
-      <div className="absolute top-6 right-6 flex items-center gap-3">
-        <button onClick={toggleTheme} className="p-2 rounded-full bg-gray-300 dark:bg-gray-700">
-          {theme === "dark" ? <FaSun className="text-yellow-400" /> : <FaMoon className="text-gray-800" />}
-        </button>
-
-        <button
-          onClick={() => i18n.changeLanguage("en")}
-          className={`px-3 py-1 rounded-lg ${i18n.language === "en" ? "bg-yellow-400 text-black" : "bg-gray-300 dark:bg-gray-700"}`}
-        >
-          EN
-        </button>
-
-        <button
-          onClick={() => i18n.changeLanguage("de")}
-          className={`px-3 py-1 rounded-lg ${i18n.language === "de" ? "bg-yellow-400 text-black" : "bg-gray-300 dark:bg-gray-700"}`}
-        >
-          DE
-        </button>
-      </div>
-
       {/* 🗺️ Map Section */}
       <div className="w-full h-[400px] mb-10">
         <iframe
